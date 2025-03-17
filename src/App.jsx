@@ -2,6 +2,9 @@ import { useState, memo } from 'react'
 import { useRoutes, useLocation } from 'react-router-dom'
 import routes from '@/router'
 
+
+import AppHeader from './components/app-header'
+
 const App = memo(() => {
   const [count, setCount] = useState(0)
 
@@ -14,11 +17,11 @@ const App = memo(() => {
 
   return (
     <div className='app'>
-      <div className='header'>
-        <div className='page'>
-          {element} {/* 使用钩子返回的元素 */}
-        </div>
+      <AppHeader />
+      <div className='page'>
+        {element} {/* 使用钩子返回的元素 */}
       </div>
+
     </div>
   )
 })
