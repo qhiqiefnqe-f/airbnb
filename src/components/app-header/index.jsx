@@ -7,9 +7,9 @@ import { HeaderWrapper } from './style'
 const AppHeader = memo(() => {
   return (
     <HeaderWrapper>
-      <HeaderLeft />
-      <HeaderCenter />
-      <HeaderRight />
+      <HeaderLeft/>
+      <HeaderCenter/>
+      <HeaderRight/>
     </HeaderWrapper>
   )
 })
